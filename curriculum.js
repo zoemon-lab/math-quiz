@@ -1,0 +1,2 @@
+import{STANDARD_ITEMS}from'./curriculum-data.js';import{CONTEXTS,curriculumTask}from'./curriculum-contexts.js';export{STANDARD_ITEMS};
+export function installCurriculum(topic){for(const item of STANDARD_ITEMS){const c=CONTEXTS[item.grade]?.[item.section];if(!c&&item.domain!=='活動')throw Error('要領の対応課題がありません：'+item.code);topic(item.grade,'cs-'+item.code,`要領 ${item.section}｜${c?.[0]||'数学的活動'}`,item.label,ctx=>curriculumTask(item,ctx));}}
