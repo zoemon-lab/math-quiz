@@ -5,3 +5,5 @@
 @media print{dialog{display:none!important}}
 @media(max-width:760px){.count-options{grid-template-columns:repeat(5,1fr)}dialog.practice{padding:16px}.practice-question{font-size:18px}}
 .paper:not(.answer-sheet) .manual-task{min-height:65mm}.manual-task .qheading{flex-wrap:wrap}.manual-task .qheading>span:nth-child(2){font-size:11px;max-width:90%}
+
+.count-options{grid-template-columns:repeat(3,1fr)}
